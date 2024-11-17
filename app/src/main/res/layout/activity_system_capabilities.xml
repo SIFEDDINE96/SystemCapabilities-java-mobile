@@ -1,19 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            tools:context=".SystemCapabilitiesActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Numéro de téléphone"
+                android:inputType="phone"
+                android:padding="8dp" />
+
+        <Button
+                android:id="@+id/buttonCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appeler" />
+
+        <EditText
+                android:id="@+id/editTextSmsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Numéro SMS"
+                android:inputType="phone"
+                android:padding="8dp" />
+
+        <EditText
+                android:id="@+id/editTextSmsContent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Contenu du SMS"
+                android:inputType="text"
+                android:padding="8dp" />
+
+        <Button
+                android:id="@+id/buttonSendSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Envoyer SMS" />
+
+        <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Adresse email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp" />
+
+        <EditText
+                android:id="@+id/editTextSubject"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Sujet"
+                android:inputType="text"
+                android:padding="8dp" />
+
+        <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Message"
+                android:inputType="textMultiLine"
+                android:padding="8dp" />
+
+        <Button
+                android:id="@+id/buttonSendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Envoyer Email" />
+
+        <Button
+                android:id="@+id/buttonShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partager le contenu" />
+
+        <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Adresse (Maps)"
+                android:inputType="text"
+                android:padding="8dp" />
+
+        <Button
+                android:id="@+id/buttonMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ouvrir dans Maps" />
+
+        <EditText
+                android:id="@+id/editTextUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="URL"
+                android:inputType="textUri"
+                android:padding="8dp" />
+
+        <Button
+                android:id="@+id/buttonOpenBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ouvrir le navigateur" />
+    </LinearLayout>
+</ScrollView>
